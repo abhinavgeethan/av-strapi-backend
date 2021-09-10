@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/snl-movies",
+      "handler": "snl-movie.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/snl-movies/count",
+      "handler": "snl-movie.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/snl-movies/:id",
+      "handler": "snl-movie.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/snl-movies",
+      "handler": "snl-movie.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/snl-movies/:id",
+      "handler": "snl-movie.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/snl-movies/:id",
+      "handler": "snl-movie.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

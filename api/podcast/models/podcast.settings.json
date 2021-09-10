@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcasts",
+  "info": {
+    "name": "podcast"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "posterImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "youtubeURL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "spotifyURL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "hosts": {
+      "type": "string",
+      "required": true
+    },
+    "episodeNumber": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "releaseDate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

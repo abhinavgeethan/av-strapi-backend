@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/movie-playlists",
+      "handler": "movie-playlist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movie-playlists/count",
+      "handler": "movie-playlist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movie-playlists/:id",
+      "handler": "movie-playlist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/movie-playlists",
+      "handler": "movie-playlist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/movie-playlists/:id",
+      "handler": "movie-playlist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/movie-playlists/:id",
+      "handler": "movie-playlist.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/random-movie",
+      "handler": "random-movie.tmdbFetch",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

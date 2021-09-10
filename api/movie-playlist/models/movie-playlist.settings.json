@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movie_playlists",
+  "info": {
+    "name": "moviePlaylist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "movieData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.movie"
+    },
+    "rank": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

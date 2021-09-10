@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_components_movies",
+  "info": {
+    "name": "movie",
+    "icon": "film"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "poster": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "trailerURL": {
+      "type": "string",
+      "default": "None"
+    },
+    "synopsis": {
+      "type": "text",
+      "default": "None"
+    }
+  }
+}

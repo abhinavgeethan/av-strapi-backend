@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "snl_movies",
+  "info": {
+    "name": "snlMovie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "upcoming": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "screeningDateTime": {
+      "type": "datetime",
+      "default": "2021-09-11T18:00:00.000Z",
+      "required": true,
+      "unique": true
+    },
+    "movieData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.movie",
+      "required": true
+    }
+  }
+}
